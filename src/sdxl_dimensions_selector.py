@@ -5,15 +5,15 @@ from comfy_api.latest import io
 from typing_extensions import override
 
 _DIMENSIONS: dict[str, tuple[int, int]] = {
-    "1024 × 1024  (1:1)": (1024, 1024),
-    "1152 × 896   (9:7)": (1152, 896),
-    "896  × 1152  (7:9)": (896, 1152),
-    "1216 × 832  (19:13)": (1216, 832),
-    "832  × 1216 (13:19)": (832, 1216),
-    "1344 × 768   (7:4)": (1344, 768),
-    "768  × 1344  (4:7)": (768, 1344),
-    "1536 × 640  (12:5)": (1536, 640),
-    "640  × 1536  (5:12)": (640, 1536),
+    "1024 × 1024  (1:1)    — Square": (1024, 1024),  # 1.05 MP
+    "1152 × 896   (9:7)    — Landscape": (1152, 896),  # 1.03 MP
+    "896  × 1152  (7:9)    — Portrait": (896, 1152),  # 1.03 MP
+    "1216 × 832   (19:13)  — Photo Landscape": (1216, 832),  # 1.01 MP
+    "832  × 1216  (13:19)  — Photo Portrait": (832, 1216),  # 1.01 MP
+    "1344 × 768   (7:4)    — Wide Landscape": (1344, 768),  # 1.03 MP
+    "768  × 1344  (4:7)    — Tall Portrait": (768, 1344),  # 1.03 MP
+    "1536 × 640   (12:5)   — Ultrawide": (1536, 640),  # 0.98 MP
+    "640  × 1536  (5:12)   — Ultra-Tall": (640, 1536),  # 0.98 MP
 }
 
 
@@ -29,10 +29,12 @@ class SDXLDimensionsSelector(io.ComfyNode):
             inputs=[
                 io.Combo.Input(
                     "dimensions",
+                    display_name="Dimensions",
                     options=list(_DIMENSIONS.keys()),
                 ),
                 io.Float.Input(
                     "upscale_factor",
+                    display_name="Upscale Factor",
                     default=2.0,
                     min=1.0,
                     max=8.0,
@@ -40,7 +42,7 @@ class SDXLDimensionsSelector(io.ComfyNode):
                 ),
                 io.Int.Input(
                     "batch_size",
-                    display_name="Batch",
+                    display_name="Batch Size",
                     default=1,
                     min=1,
                     step=1,

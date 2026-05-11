@@ -54,10 +54,12 @@ class Flux1DimensionsSelector(io.ComfyNode):
             inputs=[
                 io.Combo.Input(
                     "dimensions",
+                    display_name="Dimensions",
                     options=list(_DIMENSIONS.keys()),
                 ),
                 io.Float.Input(
                     "upscale_factor",
+                    display_name="Upscale Factor",
                     default=2.0,
                     min=1.0,
                     max=8.0,
@@ -65,7 +67,7 @@ class Flux1DimensionsSelector(io.ComfyNode):
                 ),
                 io.Int.Input(
                     "batch_size",
-                    display_name="Batch",
+                    display_name="Batch Size",
                     default=1,
                     min=1,
                     step=1,
