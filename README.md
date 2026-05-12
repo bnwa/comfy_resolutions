@@ -1,8 +1,6 @@
 # Comfy Combos
 
-Dropdown selector nodes for ComfyUI. Each node replaces a free-text or
-disconnected widget with a single combo input that passes a typed value
-downstream.
+Dropdown selector nodes for ComfyUI
 
 > [!IMPORTANT]
 > This extension uses the `comfy_api.latest` v3 node API. It requires a
@@ -29,28 +27,6 @@ No additional Python dependencies are required beyond ComfyUI itself.
 ## Nodes
 
 All nodes appear under the **Comfy Combos** category.
-
-### Select Sampler
-
-Outputs the chosen KSampler sampler name as a `SAMPLER_NAME` string.
-
-| | Name | Type | Notes |
-|---|---|---|---|
-| **Input** | `sampler_name` | Combo | All samplers registered with `KSampler` |
-| **Output** | `Sampler` | `SAMPLER_NAME` | |
-
----
-
-### Select Scheduler
-
-Outputs the chosen KSampler scheduler name as a `SCHEDULER_NAME` string.
-
-| | Name | Type | Notes |
-|---|---|---|---|
-| **Input** | `scheduler_name` | Combo | All schedulers registered with `KSampler` |
-| **Output** | `Scheduler` | `SCHEDULER_NAME` | |
-
----
 
 ### Select SDXL Dimensions
 
