@@ -1,6 +1,6 @@
-# Comfy Combos
+# Comfy Resolutions
 
-Dropdown selector nodes for ComfyUI
+Resolution preset selectors for ComfyUI
 
 > [!IMPORTANT]
 > This extension uses the `comfy_api.latest` v3 node API. It requires a
@@ -17,7 +17,7 @@ Dropdown selector nodes for ComfyUI
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/bnwa/comfy_combos
+git clone https://github.com/bnwa/comfy_resolutions
 ```
 
 No additional Python dependencies are required beyond ComfyUI itself.
@@ -26,7 +26,7 @@ No additional Python dependencies are required beyond ComfyUI itself.
 
 ## Nodes
 
-All nodes appear under the **Comfy Combos** category.
+All nodes appear under the **Comfy Resolutions** category.
 
 ### Select SDXL Dimensions
 
@@ -146,7 +146,7 @@ Each tier covers Square, Landscape/Portrait, Classic 4:3/3:4, Photo 3:2/2:3,
 Install with dev dependencies:
 
 ```bash
-cd comfy_combos
+cd comfy_resolutions
 pip install -e ".[dev]"
 pre-commit install
 ```

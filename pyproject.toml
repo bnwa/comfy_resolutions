@@ -3,9 +3,9 @@ requires = ["setuptools>=70.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "comfy_combos"
+name = "comfy_resolutions"
 version = "0.0.1"
-description = "Dropdown selectors for ComfyUI"
+description = "Resolution preset selectors for ComfyUI"
 authors = [
   {name = "Benoît Barberousse", email = "74591246+bnwa@users.noreply.github.com"}
 ]
@@ -30,17 +30,17 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/bnwa/comfy_combos"
-BugTracker = "https://github.com/bnwa/comfy_combos/issues"
-Documentation = "https://github.com/bnwa/comfy_combos/wiki"
+Repository = "https://github.com/bnwa/comfy_resolutions"
+BugTracker = "https://github.com/bnwa/comfy_resolutions/issues"
+Documentation = "https://github.com/bnwa/comfy_resolutions/wiki"
 
 
 [tool.comfy]
 PublisherId = "bnwa"
-DisplayName = "Comfy Combos"
+DisplayName = "Comfy Resolutions"
 Icon = ""
-Tags = ["dropdown", "selector", "sampler", "scheduler", "dimensions", "sdxl", "utility"]
-Repository = "https://github.com/bnwa/comfy_combos"
+Tags = ["dropdown", "selector", "dimensions", "sdxl", "flux.1 dev", "z-image", "latent", "utility"]
+Repository = "https://github.com/bnwa/comfy_resolutions"
 
 includes = []
 

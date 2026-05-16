@@ -6,7 +6,7 @@ from .src.sdxl_dimensions_selector import SDXLDimensionsSelector
 from .src.zimage_dimensions_selector import ZImageDimensionsSelector
 
 
-class ComfyCombos(ComfyExtension):
+class ComfyResolutions(ComfyExtension):
     @override
     async def get_node_list(self) -> list[type[io.ComfyNode]]:
         return [
@@ -17,4 +17,4 @@ class ComfyCombos(ComfyExtension):
 
 
 async def comfy_entrypoint() -> ComfyExtension:
-    return ComfyCombos()
+    return ComfyResolutions()

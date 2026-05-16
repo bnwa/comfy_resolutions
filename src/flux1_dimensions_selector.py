@@ -47,9 +47,9 @@ class Flux1DimensionsSelector(io.ComfyNode):
     @classmethod
     def define_schema(cls) -> io.Schema:
         return io.Schema(
-            node_id="comfy_combos_Flux1DimensionsSelector",
+            node_id="comfy_resolutions_Flux1DimensionsSelector"
             display_name="Select Flux.1 Dimensions",
-            category="Comfy Combos",
+            category="Comfy Resolutions"
             description="Select width and height from common Flux.1-compatible dimension presets. Uses 16-channel Flux VAE latent space.",
             inputs=[
                 io.Combo.Input(

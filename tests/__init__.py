@@ -1,1 +1,1 @@
-"""Unit test package for comfy_combos."""
+"""Unit test package for comfy_resolutions."""
