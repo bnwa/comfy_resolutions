@@ -22,9 +22,9 @@ class SDXLDimensionsSelector(io.ComfyNode):
     @classmethod
     def define_schema(cls) -> io.Schema:
         return io.Schema(
-            node_id="comfy_resolutions_SDXLDimensionsSelector"
+            node_id="comfy_resolutions_SDXLDimensionsSelector",
             display_name="Select SDXL Dimensions",
-            category="Comfy Resolutions"
+            category="Comfy Resolutions",
             description="Select width and height from common SDXL-compatible dimension presets",
             inputs=[
                 io.Combo.Input(

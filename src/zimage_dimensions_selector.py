@@ -49,9 +49,9 @@ class ZImageDimensionsSelector(io.ComfyNode):
     @classmethod
     def define_schema(cls) -> io.Schema:
         return io.Schema(
-            node_id="comfy_resolutions_ZImageDimensionsSelector"
+            node_id="comfy_resolutions_ZImageDimensionsSelector",
             display_name="Select Z-Image Dimensions",
-            category="Comfy Resolutions"
+            category="Comfy Resolutions",
             description="Select width and height from official Z-Image dimension presets across 1024, 1280, and 1536 tiers (covers base and Turbo variants). Uses 16-channel VAE latent space with 8× spatial compression.",
             inputs=[
                 io.Combo.Input(
