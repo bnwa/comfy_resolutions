@@ -91,7 +91,7 @@ class ZImageDimensionsSelector(io.ComfyNode):
         batch_size = cast(int, inputs["batch_size"])
         width, height = _DIMENSIONS[inputs["dimensions"]]
         upscale_factor = cast(float, inputs["upscale_factor"])
-        latent = {"samples": torch.zeros(batch_size, 16, height // 8, width // 8)}  # pyright: ignore[reportPrivateImportUsage]
+        latent = {"samples": torch.zeros(batch_size, 16, height // 8, width // 8), "downscale_ratio_spacial": 8}  # pyright: ignore[reportPrivateImportUsage]
         return io.NodeOutput(
             width,
             height,
